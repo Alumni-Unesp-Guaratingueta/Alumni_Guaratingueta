@@ -1,0 +1,171 @@
+header {
+    .logo {
+        width: 100%;
+        height: 132px;
+        position: relative;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .logo img {
+        margin-top: 32px;
+    }
+}
+
+nav {
+position: relative;
+background-color: $nav;
+width: 100%;
+height: 84px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+display: grid;
+justify-content: center;
+
+.container {
+img {
+    position: relative;
+    margin-right: 45px;
+    top: 10px;
+}
+
+img:nth-child(2) {
+    margin-right: 0;
+}
+ul {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+li {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+ul li a {
+    color: $bg;
+    text-decoration: none;
+    line-height: 85px;
+    font-size: 16px;
+}
+
+ul ul {
+    background-color: $bg;
+    position: absolute;
+    top: 84px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    border-top: 2px solid #000;
+}
+
+
+ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 300px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid $nav ;
+}
+
+ul ul li a {
+    color: $nav;
+}
+
+ul ul ul {
+    border-top: none ;
+}
+// ul ul ul li{
+//     position: relative;
+//     top: -70px;
+//     left: 150px;
+// }
+ul ul ul li a {
+    line-height: 50px;
+}
+}
+}
+
+// @media all and (max-width: 1169px) {
+//   nav ul{
+//     margin-right: 0px;
+//     float: left;
+//   }
+//   nav .logo{
+//     padding-left: 30px;
+//     width: 100%;
+//   }
+//   .show + a, ul{
+//     display: none;
+//   }
+//   nav ul li,nav ul ul li{
+//     display: block;
+//     width: 100%;
+//   }
+//   nav ul li a:hover{
+//     box-shadow: none;
+//   }
+//   .show{
+//     display: block;
+//     color: white;
+//     font-size: 18px;
+//     padding: 0 20px;
+//     line-height: 70px;
+//     cursor: pointer;
+//   }
+//   .show:hover{
+//     color: cyan;
+//   }
+//   .icon{
+//     display: block;
+//     color: white;
+//     position: absolute;
+//     top: 0;
+//     text-align: center;
+//     justify-content: center;
+//     line-height: 70px;
+//     cursor: pointer;
+//     font-size: 25px;
+//   }
+//   nav ul ul{
+//     top: 70px;
+//     border-top: 0px;
+//     float: none;
+//     position: static;
+//     display: none;
+//     opacity: 1;
+//     visibility: visible;
+//   }
+//   nav ul ul a{
+//     padding-left: 40px;
+//   }
+//   nav ul ul ul a{
+//     padding-left: 80px;
+//   }
+//   nav ul ul ul li{
+//     position: static;
+//   }
+//   [id^=btn]:checked + ul{
+//     display: block;
+//   }
+//   nav ul ul li{
+//     border-bottom: 0px;
+//   }
+//   span.cancel:before{
+//     content: '\f00d';
+//   }
+// }
+
+
