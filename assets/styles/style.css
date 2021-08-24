@@ -1,0 +1,424 @@
+header .logo {
+  width: 100%;
+  height: 132px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1170px;
+  margin: auto;
+}
+
+header .logo img {
+  margin-top: 32px;
+}
+
+nav {
+  position: relative;
+  background-color: #009FE0;
+  width: 100%;
+  height: 84px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+nav .container img {
+  position: relative;
+  margin-right: 45px;
+  top: 10px;
+}
+
+nav .container img:nth-child(2) {
+  margin-right: 0;
+}
+
+nav .container ul {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav .container li {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+nav .container ul li a {
+  color: #F7F8FD;
+  text-decoration: none;
+  line-height: 85px;
+  font-size: 16px;
+}
+
+nav .container ul ul {
+  background-color: #F7F8FD;
+  position: absolute;
+  top: 84px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: top .3s;
+  transition: top .3s;
+  border-top: 2px solid #000;
+}
+
+nav .container ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav .container ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 300px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #009FE0;
+}
+
+nav .container ul ul li a {
+  color: #009FE0;
+}
+
+nav .container ul ul ul {
+  border-top: none;
+}
+
+nav .container ul ul ul li a {
+  line-height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Poppins;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+body {
+  background-color: #F7F8FD;
+}
+
+body .slider {
+  display: block;
+  background-image: url(../img/Home_banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 78vh;
+}
+
+body .divider1 {
+  width: 100%;
+  height: 300px;
+  background-color: #009FE0;
+  position: relative;
+}
+
+body .divider1 h1 {
+  position: absolute;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 78px 0 0 300px;
+  color: #FFF;
+  font-weight: 600;
+  width: 600px;
+  height: 300px;
+  font-size: 32px;
+}
+
+body .divider1 img {
+  position: relative;
+}
+
+body h2 {
+  position: absolute;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  font-weight: 600;
+  width: 370px;
+  height: 171px;
+  font-size: 32px;
+}
+
+body h3 {
+  position: absolute;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  font-weight: 500;
+  width: 370px;
+  height: 92px;
+  font-size: 22px;
+}
+
+body a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+body button {
+  width: 348px;
+  height: 54px;
+  background-color: #009FE0;
+  color: #FFF;
+  margin: 7px 10px;
+}
+
+body .button-exp {
+  position: relative;
+  width: 368px;
+  height: 68px;
+  border: 1px solid #000;
+}
+
+body .body1 {
+  position: relative;
+  margin-top: 50px;
+}
+
+body .body1 h2 {
+  top: 13px;
+  left: 700px;
+}
+
+body .body1 h3 {
+  top: 192px;
+  left: 700px;
+}
+
+body .body1 .button-exp {
+  position: absolute;
+  left: 700px;
+  top: 334px;
+}
+
+body .body2 {
+  position: relative;
+  margin-top: 50px;
+}
+
+body .body2 h2 {
+  top: 13px;
+  left: 100px;
+}
+
+body .body2 h3 {
+  top: 192px;
+  left: 100px;
+}
+
+body .body2 .button-exp {
+  position: absolute;
+  left: 100px;
+  top: 334px;
+}
+
+body .body2 img {
+  margin-left: 594px;
+}
+
+body .body3 {
+  position: relative;
+  margin-top: 50px;
+}
+
+body .body3 h2 {
+  top: 13px;
+  left: 700px;
+}
+
+body .body3 h3 {
+  top: 192px;
+  left: 700px;
+}
+
+body .body3 .button-exp {
+  position: absolute;
+  left: 700px;
+  top: 334px;
+}
+
+body .body4 {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body .body4 h2 {
+  top: 13px;
+  left: 100px;
+}
+
+body .body4 h3 {
+  top: 192px;
+  left: 100px;
+}
+
+body .body4 .button-exp {
+  position: absolute;
+  left: 100px;
+  top: 334px;
+}
+
+body .body4 img {
+  margin-left: 594px;
+}
+
+footer {
+  width: 100%;
+  height: 620px;
+  background-color: #EBEBEB;
+  position: relative;
+}
+
+footer a {
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  color: #000;
+}
+
+footer img {
+  position: absolute;
+  margin-top: 64px;
+}
+
+footer .pt1 a:first-child, footer .pt2 a:first-child {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer .pt1 {
+  position: absolute;
+}
+
+footer .pt1 .rdp-1, footer .pt1 .rdp-2, footer .pt1 .rdp-3, footer .pt1 .rdp-4 {
+  position: absolute;
+  top: 60px;
+}
+
+footer .pt1 .rdp-1 {
+  bottom: 15px;
+  left: 301px;
+}
+
+footer .pt1 .rdp-1 a {
+  margin-bottom: 12px;
+}
+
+footer .pt1 .rdp-2 {
+  margin-bottom: 15px;
+  left: 500px;
+}
+
+footer .pt1 .rdp-2 a {
+  margin-bottom: 12px;
+}
+
+footer .pt1 .rdp-3 {
+  margin-bottom: 15px;
+  left: 670px;
+}
+
+footer .pt1 .rdp-3 a {
+  width: 180px;
+  margin-bottom: 12px;
+}
+
+footer .pt1 .rdp-4 {
+  margin-bottom: 25px;
+  left: 870px;
+}
+
+footer .pt1 .rdp-4 a {
+  width: 200px;
+  margin-bottom: 12px;
+}
+
+footer .pt2 {
+  position: absolute;
+}
+
+footer .pt2 .rdp-5, footer .pt2 .rdp-6, footer .pt2 .rdp-7, footer .pt2 .rdp-8 {
+  position: absolute;
+  top: 230px;
+}
+
+footer .pt2 .rdp-5 {
+  bottom: 15px;
+  left: 301px;
+}
+
+footer .pt2 .rdp-5 a {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+footer .pt2 .rdp-6 {
+  margin-bottom: 15px;
+  left: 500px;
+}
+
+footer .pt2 .rdp-6 a {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+footer .pt2 .rdp-7 {
+  margin-bottom: 15px;
+  left: 670px;
+}
+
+footer .pt2 .rdp-7 a {
+  width: 170px;
+  margin-bottom: 15px;
+}
+
+footer .pt2 .rdp-8 {
+  margin-bottom: 25px;
+  left: 870px;
+}
+
+footer .pt2 .rdp-8 a {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+footer .copyright {
+  position: absolute;
+  top: 583px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
