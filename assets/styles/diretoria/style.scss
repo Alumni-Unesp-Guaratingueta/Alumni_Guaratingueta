@@ -1,0 +1,151 @@
+@import "../../styles/variables/_variables.scss";
+@import "../../styles/variables/_navbar.scss";
+@import "../../styles/variables/_footer.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+body {  
+    background-color: $bg;
+    button {
+        width: 348px;
+        height: 54px;
+        background-color: $nav;
+        color: #FFF;
+        margin: 7px 10px;
+    }
+    .button-exp {
+        position: relative;
+        width: 368px;
+        height: 68px;
+        border: 1px solid #000;
+    }
+    a {
+        color: #FFF;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .doc {
+        position: relative;
+        text-align: center;
+        margin-top: 25px;
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: 500
+        }        
+        img {
+            margin-top: 50px;
+            max-width: 650px;
+            width: 100%;
+        }
+    
+    }
+    .docbutton {
+        margin-top: 60px;
+        margin-bottom: 50px;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        box-sizing: border-box;
+        
+        .pt1 .button-exp {
+            display: inline-flex;
+        }
+        
+        .button-exp {
+            margin-right: 30px;
+        }
+        
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+footer {
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+@media (max-width: 1169px) {
+    body {  
+        button {
+            width: 348px;
+            height: 54px;
+            background-color: $nav;
+            color: #FFF;
+          
+        }.docbutton {
+            .button-exp {
+                margin-right: 0;
+            }
+        }
+        .button-exp {
+            position: relative;
+            width: 368px;
+            height: 68px;
+            border: 1px solid #000;
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
+        .docbutton {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            justify-content: center;
+            text-align: center;
+            display: grid;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {  
+        button {
+            width: 248px;
+            height: 54px;
+            background-color: $nav;
+            color: #FFF;
+            margin: 7px 10px;
+        }
+        .button-exp {
+            position: relative;
+            width: 268px;
+            height: 68px;
+            border: 1px solid #000;
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
+        h2 {
+            margin-top: 25px;
+            font-size: 18px;
+        }   
+        .doc {
+            h1 {
+            font-size: 26px;
+        }
+        img {
+            margin-top: 50px;
+            max-width: calc(100vw - 100px);
+            width: 100%;
+        }
+        }
+    }
+}
