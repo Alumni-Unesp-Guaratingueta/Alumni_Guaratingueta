@@ -1,0 +1,35 @@
+@import "../variables/_variables.scss";
+@import "../variables/_navbar.scss";
+@import "../variables/_footer.scss";
+@import "../variables/_scrollbar.scss";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+body {
+    background-color: #FFF;  
+    h1 {
+        text-align: center;
+        margin: 25px 0 25px 0;
+    }
+    p, i {
+        font-size: 20px;
+    }
+    p:last-child {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    p, i {
+        font-size: 16px;
+    }
+}
