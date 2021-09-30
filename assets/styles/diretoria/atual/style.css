@@ -570,41 +570,67 @@ h3 {
   margin: 50px 0 50px 0;
 }
 
-.container .content1, .container .content2 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.container .content1, .container .content2, .container .content3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.container .content1 {
-  margin-bottom: 50px;
+.container .align_1 img, .container .align_2 img, .container .align_3 img {
+  max-width: 270px;
+  width: 100%;
 }
 
 .container .content1 .align_1 {
-  margin-left: 200px;
+  margin-right: 5vw;
 }
 
-.container .content1 .align_2 {
-  margin-left: 230px;
+.container .content2 {
+  margin-top: 50px;
 }
 
-.container .content2 .align_1 {
-  margin: 0 30px 0 150px;
+.container .content2 .align_1, .container .content2 .align_2 {
+  margin-right: 2.5vw;
 }
 
-.container .content2 .align_2 {
-  margin-right: 30px;
+.container .content3 .align_1, .container .content3 .align_2 {
+  margin-right: 2.5vw;
 }
 
-.container .content2:last-child {
+.container .content3:last-child {
   margin-bottom: 50px;
 }
 
-.container .content2:last-child .align_2 {
-  margin-right: 6px;
+.container .content3:last-child .align_2 {
+  margin-bottom: 30.5px;
 }
 
-.container .content2:last-child .align_2 h2 {
+.container .content3:last-child .align_2 h2:last-child {
+  position: absolute;
   width: 294px;
+}
+
+@media (max-width: 850px) {
+  .container .content1, .container .content2, .container .content3 {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container .content1 .align_1, .container .content1 .align_2, .container .content1 .align_3, .container .content2 .align_1, .container .content2 .align_2, .container .content2 .align_3, .container .content3 .align_1, .container .content3 .align_2, .container .content3 .align_3 {
+    margin: 0;
+  }
+  .container .content1 .align_2 {
+    margin-top: 50px;
+  }
+  .container .content2 .align_2, .container .content2 .align_3, .container .content3 .align_2, .container .content3 .align_3 {
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
