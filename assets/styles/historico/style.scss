@@ -28,8 +28,16 @@ body {
     }
 }
 
-@media (max-width: 375px) {
-    p, i {
-        font-size: 16px;
+@media (max-width: 1169px) {
+    .container {
+        max-width: calc(100% - 50px);
     }
+}
+
+@media (max-width: 576px) {
+.container {
+    p, i {
+    font-size: 18px;
+}
+}
 }

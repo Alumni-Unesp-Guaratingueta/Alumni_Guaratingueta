@@ -116,6 +116,15 @@ button:hover, button:focus {
     }
 }
 
+@media (max-width: 576px) {
+    .container {
+        max-width: calc(100% - 50px);
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
 @media (max-width: 599px) {
     .pdfview {
         width: calc(100% - 50px);
