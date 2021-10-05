@@ -45,7 +45,6 @@ submenu.addEventListener("click", function() {
             subSub[i].style.cssText = `
                 display: flex;
                 opacity: 1;
-                cursor: pointer;
             `   
         }
 
