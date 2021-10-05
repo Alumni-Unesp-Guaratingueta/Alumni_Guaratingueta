@@ -14,6 +14,8 @@ header .logo {
 
 header .logo img {
   margin-top: 32px;
+  width: 270px;
+  height: 70px;
 }
 
 nav {
@@ -42,6 +44,8 @@ nav .container img {
   position: relative;
   margin-right: 45px;
   top: 10px;
+  width: 40px;
+  height: 35px;
 }
 
 nav .container img:nth-child(2) {
