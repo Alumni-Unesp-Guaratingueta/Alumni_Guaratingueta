@@ -1,4 +1,4 @@
-submenu = document.getElementById("checkbox-menu")
+var submenu = document.getElementById("checkbox-menu")
 var subSub = document.querySelectorAll("#submenu")
 var cont = 0;
 // 7
@@ -35,7 +35,7 @@ submenu.addEventListener("click", function() {
         let show = true; 
     document.body.style.overflow = show = "scroll"
 
-    menuSection.classList.toggle("on", show)
+    // subSub.classList.toggle("on", show)
     show = !show;
 
 
@@ -51,7 +51,7 @@ submenu.addEventListener("click", function() {
         let show = true; 
     document.body.style.overflow = show = "hidden"
 
-    menuSection.classList.toggle("on", show)
+    // subSub.classList.toggle("on", show)
     show = !show;
     
     }
