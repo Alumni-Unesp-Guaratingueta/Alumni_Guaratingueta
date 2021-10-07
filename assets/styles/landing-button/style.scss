@@ -1,0 +1,201 @@
+@import "../../styles/variables/_variables.scss";
+@import "../../styles/variables/_navbar.scss";
+@import "../../styles/variables/_footer.scss";
+@import "../../styles/variables/_scrollbar.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Poppins;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+body {  
+    background-color: #FFF;
+    button {
+        width: 348px;
+        height: 54px;
+        background-color: $nav;
+        color: #FFF;
+        margin: 7px 10px;
+    }
+    .button-exp {
+        position: relative;
+        width: 368px;
+        height: 68px;
+        border: 1px solid #000;
+    }
+    a {
+        color: #FFF;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .doc {
+        position: relative;
+        text-align: center;
+        margin-top: 25px;
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: 500
+        }        
+        img {
+            margin-top: 50px;
+            max-width: 650px;
+            width: 100%;
+        }
+    
+    }
+    .docbutton {
+        margin-top: 60px;
+        margin-bottom: 50px;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        box-sizing: border-box;
+        .pt1 .button-exp {
+            display: inline-flex;
+        }
+        
+        .button-exp {
+            margin-right: 30px;
+        }
+        
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+footer {
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: inset 348px 0 0 0 #2b2b2b; 
+}
+
+#doc_antigos {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    box-sizing: border-box;
+}
+
+// PDF Viewer
+.pdfview {
+    width: 600px;
+    height: 700px;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centerpdf {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    h1:first-child {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: calc(100% - 50px);
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .pdfview {
+        width: calc(100% - 50px);
+        height: 500px;
+    }
+}
+
+@media (max-width: 1169px) {
+    body {  
+        button {
+            width: 348px;
+            height: 54px;
+            background-color: $nav;
+            color: #FFF;
+          
+        }.docbutton {
+            .button-exp {
+                margin-right: 0;
+            }
+        }
+        .button-exp {
+            position: relative;
+            width: 368px;
+            height: 68px;
+            border: 1px solid #000;
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
+        .docbutton {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            justify-content: center;
+            text-align: center;
+            display: grid;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {  
+        button {
+            width: 248px;
+            height: 54px;
+            background-color: $nav;
+            color: #FFF;
+            margin: 7px 10px;
+        }
+        .button-exp {
+            position: relative;
+            width: 268px;
+            height: 68px;
+            border: 1px solid #000;
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
+        button:hover, button:focus {
+            box-shadow: inset 248px 0 0 0 #2b2b2b; 
+        }
+        h2 {
+            margin-top: 25px;
+            font-size: 18px;
+        }   
+        .doc {
+            h1 {
+            font-size: 26px;
+        }
+        img {
+            margin-top: 50px;
+            max-width: calc(100vw - 100px);
+            width: 100%;
+        }
+        }
+    }
+}
