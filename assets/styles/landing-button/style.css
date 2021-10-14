@@ -287,6 +287,21 @@ nav .container ul ul ul li a {
   }
 }
 
+@media (max-width: 500px) {
+  ul, li {
+    opacity: 0;
+    position: absolute;
+    bottom: -10px;
+    left: -22.6vw;
+  }
+  ul li a {
+    position: absolute;
+    text-align: center;
+    background: #009FE0;
+    width: 99vw;
+  }
+}
+
 footer {
   width: 100%;
   height: 620px;
@@ -719,7 +734,7 @@ button:hover, button:focus {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body button {
     width: 248px;
     height: 54px;

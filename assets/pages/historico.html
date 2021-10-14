@@ -14,11 +14,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 </style>
 <style>
+
+@media (max-width: 1169px) {
+    .container:nth-child(3) {
+        max-width: calc(100% - 50px);
+    }
+}
+
     * {box-sizing: border-box;}
     body {font-family: Poppins, sans-serif;}
     .mySlides {display: none;}
-
-    
     /* Slideshow container */
     .slideshow-container {
         width: 100%;
@@ -91,7 +96,7 @@
         <a href="/index.html" style="cursor: pointer;"><img  src="https://alumniunesp-guaratingueta.github.io/Galeria1/img/Logo%20Alumni.png"></a>
     </div>
     <nav>
-        <div class="container">
+        <div class="container" id="container-nav">
             <input type="checkbox" id="checkbox-menu">
 
             <label for="checkbox-menu">

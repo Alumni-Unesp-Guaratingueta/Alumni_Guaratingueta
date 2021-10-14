@@ -1,5 +1,7 @@
 var submenu = document.getElementById("checkbox-menu")
 var subSub = document.querySelectorAll("#submenu")
+var containernav = document.getElementById("container-nav")
+
 var cont = 0;
 // 7
 var screenWidth = screen.width;
@@ -32,11 +34,11 @@ submenu.addEventListener("click", function() {
                 cursor: default;
             `   
         }
-        let show = true; 
-    // document.body.style.overflow = show = "scroll"
+         let show = true; 
+    containernav = document.body.style.overflow = show = "scroll"
 
-    // subSub.classList.toggle("on", show)
-    // show = !show;
+    subSub.classList.toggle("on", show)
+    show = !show;
 
 
     } else {
@@ -49,10 +51,11 @@ submenu.addEventListener("click", function() {
         }
 
         let show = true; 
-    // document.body.style.overflow = show = "hidden"
+    containernav = document.body.style.overflow = show = "hidden"
+    document.body.style.overflow = show = "hidden"
 
-    // subSub.classList.toggle("on", show)
-    // show = !show;
+    subSub.classList.toggle("on", show)
+    show = !show;
     
     }
     
