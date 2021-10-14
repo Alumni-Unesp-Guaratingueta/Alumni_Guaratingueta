@@ -181,18 +181,18 @@ ul ul ul li a {
   }
   .nav-7 {
     top: 588px;
-    opacity: 1;
+
   }
   .nav-8 {
     top: 672px;
-    opacity: 1;
   }
   
     ul, li{
         opacity: 0;
         position: absolute;
         bottom: -10px;
-        left: -19vw;
+        // left: -19vw;
+        right: 21.5vw;
         // left: -160px;
     }
 
@@ -200,7 +200,7 @@ ul ul ul li a {
         position: absolute;
         text-align: center;
         background: $nav;
-        width: 80vw;
+        width: 99vw;
         // width: 100vw;
     }
 

@@ -29,13 +29,13 @@ body {
 }
 
 @media (max-width: 1169px) {
-    .container {
+    .container:nth-child(2) {
         max-width: calc(100% - 50px);
     }
 }
 
 @media (max-width: 576px) {
-.container {
+.container:nth-child(2){
     p, i {
     font-size: 18px;
 }
