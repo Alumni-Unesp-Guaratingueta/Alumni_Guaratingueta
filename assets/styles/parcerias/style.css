@@ -302,6 +302,36 @@ nav .container ul ul ul li a {
   }
 }
 
+@media (min-width: 780px) and (max-width: 868px) {
+  ul, li {
+    left: -23.9vw;
+  }
+}
+
+@media (min-width: 670px) and (max-width: 779px) {
+  ul, li {
+    left: -23.8vw;
+  }
+}
+
+@media (min-width: 584px) and (max-width: 669px) {
+  ul, li {
+    left: -23.7vw;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 584px) {
+  ul, li {
+    left: -23.6vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 530px) {
+  ul, li {
+    left: -23.5vw;
+  }
+}
+
 footer {
   width: 100%;
   height: 620px;

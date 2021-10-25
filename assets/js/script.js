@@ -34,11 +34,11 @@ submenu.addEventListener("click", function() {
                 cursor: default;
             `   
         }
-         let show = true; 
-    containernav = document.body.style.overflow = show = "scroll"
+    //      let show = true; 
+    // containernav = document.body.style.overflow = show = "scroll"
 
-    subSub.classList.toggle("on", show)
-    show = !show;
+    // subSub.classList.toggle("on", show)
+    // show = !show;
 
 
     } else {
@@ -50,12 +50,12 @@ submenu.addEventListener("click", function() {
             `   
         }
 
-        let show = true; 
-    containernav = document.body.style.overflow = show = "hidden"
-    document.body.style.overflow = show = "hidden"
+    //     let show = true; 
+    // containernav = document.body.style.overflow = show = "hidden"
+    // document.body.style.overflow = show = "hidden"
 
-    subSub.classList.toggle("on", show)
-    show = !show;
+    // subSub.classList.toggle("on", show)
+    // show = !show;
     
     }
     
