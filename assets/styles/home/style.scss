@@ -185,7 +185,7 @@ button:hover, button:focus {
     transition: 0.5s;
     box-shadow: inset 348px 0 0 0 #2b2b2b; 
 }
-@media (max-width: 500px) {
+@media (max-width: 909px) {
     body {  
         .body1 img, .body2 img, .body3 img, .body4 img{
            display: none;
@@ -244,5 +244,38 @@ button:hover, button:focus {
     }
 }
 
+@media (min-width: 910px) and (max-width: 1169px) {
+body {
 
+.body1, .body3 {
+position: relative;
+width: 100%;
+margin-top: 50px;
+img {
+    margin-left: 0px;
+    width: calc(350px + 5vw);
+}
+h2 {
+    left: calc(250px + 30vw);
+}
 
+h3 {
+    left: calc(250px + 30vw);
+}
+.button-exp {
+    position: absolute;
+    left: calc(250px + 30vw);
+}
+}
+.body2, .body4{
+   h2, h3,.button-exp {
+       left: 25px;
+   }
+   img {
+        width: calc(350px + 5vw);
+       margin-left: calc(250px + 30vw);
+   }
+} 
+}
+
+}

@@ -572,7 +572,7 @@ footer .copyright {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -791,7 +791,7 @@ button:hover, button:focus {
           box-shadow: inset 348px 0 0 0 #2b2b2b;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 909px) {
   body .body1 img, body .body2 img, body .body3 img, body .body4 img {
     display: none;
   }
@@ -850,6 +850,35 @@ button:hover, button:focus {
   }
   body .divider1 img {
     display: none;
+  }
+}
+
+@media (min-width: 910px) and (max-width: 1169px) {
+  body .body1, body .body3 {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+  }
+  body .body1 img, body .body3 img {
+    margin-left: 0px;
+    width: calc(350px + 5vw);
+  }
+  body .body1 h2, body .body3 h2 {
+    left: calc(250px + 30vw);
+  }
+  body .body1 h3, body .body3 h3 {
+    left: calc(250px + 30vw);
+  }
+  body .body1 .button-exp, body .body3 .button-exp {
+    position: absolute;
+    left: calc(250px + 30vw);
+  }
+  body .body2 h2, body .body2 h3, body .body2 .button-exp, body .body4 h2, body .body4 h3, body .body4 .button-exp {
+    left: 25px;
+  }
+  body .body2 img, body .body4 img {
+    width: calc(350px + 5vw);
+    margin-left: calc(250px + 30vw);
   }
 }
 /*# sourceMappingURL=style.css.map */
